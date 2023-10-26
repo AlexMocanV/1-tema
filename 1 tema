@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n,negative=0,pozitive=0;
+    while(cin>>n)
+    {
+        if(n<0)
+        {
+            negative++;
+        }
+        else if(n>0)
+        {
+            pozitive++;
+        }
+        else
+        {
+            break;
+        }
+    }
+    cout<<negative<<" "<<pozitive;
+
+    return 0;
+}
