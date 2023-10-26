@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int n,i;
+    cin>>n;
+    if(n%3==0)
+    {
+        n-=3;
+    }
+    else
+    n=n-n%3;
+    
+    for(i=3;i<=n;i=i+=3)
+    {
+        cout<<i<<" ";
+    }
+
+    return 0;
+}
